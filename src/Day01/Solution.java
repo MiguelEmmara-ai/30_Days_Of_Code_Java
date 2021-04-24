@@ -7,20 +7,22 @@ import java.util.Scanner;
  */
 public class Solution {
     public static void main(String[] args) {
-        // Create a Scanner object to read input from stdin.
+        int i = 4;
+        double d = 4.0;
+        String s = "HackerRank ";
+
         Scanner scan = new Scanner(System.in);
 
-        // Read a full line of input from stdin and save it to our variable, inputString.
-        String inputString = scan.nextLine();
+        int secondI = scan.nextInt();
+        double secondD = scan.nextDouble();
+        scan.nextLine();
+        String secondS = scan.nextLine();
 
-        // Close the scanner object, because we've finished reading
-        // all of the input from stdin needed for this challenge.
+        System.out.println((secondI + i));
+        System.out.println((d + secondD));
+        System.out.println((s.concat(secondS)));
+
+
         scan.close();
-
-        // Print a string literal saying "Hello, World." to stdout.
-        System.out.println("Hello, World.");
-
-        // TODO: Write a line of code here that prints the contents of inputString to stdout.
-        System.out.println(inputString);
     }
 }

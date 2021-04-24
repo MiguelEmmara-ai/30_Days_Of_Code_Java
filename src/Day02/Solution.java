@@ -9,34 +9,29 @@ import java.util.regex.*;
  * Created by Miguel Emmara
  */
 public class Solution {
+
+    // Complete the solve function below.
+    static void solve(double meal_cost, int tip_percent, int tax_percent) {
+        double tip = (meal_cost / 100) * tip_percent;
+        double tax = (meal_cost * tax_percent) / 100;
+        double total_cost = meal_cost + tip + tax;
+        System.out.println(Math.round(total_cost));
+    }
+
+    private static final Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
-        int i = 4;
-        double d = 4.0;
-        String s = "HackerRank ";
+        double meal_cost = scanner.nextDouble();
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
-        Scanner scan = new Scanner(System.in);
+        int tip_percent = scanner.nextInt();
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
-        /* Declare second integer, double, and String variables. */
+        int tax_percent = scanner.nextInt();
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
-        /* Read and save an integer, double, and String to your variables.*/
-        // Note: If you have trouble reading the entire String, please go back and review the Tutorial closely.
+        solve(meal_cost, tip_percent, tax_percent);
 
-        /* Print the sum of both integer variables on a new line. */
-
-        /* Print the sum of the double variables on a new line. */
-
-        /* Concatenate and print the String variables on a new line;
-        	the 's' variable above should be printed first. */
-
-        int secondI = scan.nextInt();
-        double secondD = scan.nextDouble();
-        scan.nextLine();
-        String secondS = scan.nextLine();
-
-        System.out.println((secondI + i));
-        System.out.println((d + secondD));
-        System.out.println((s.concat(secondS)));
-
-        scan.close();
+        scanner.close();
     }
 }
