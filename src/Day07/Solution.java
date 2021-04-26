@@ -1,6 +1,5 @@
 package Day07;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -25,7 +24,9 @@ public class Solution {
 
         reverse(arr, 0, n-1);
 
-        System.out.println(Arrays.toString(arr));
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+        }
 
         scanner.close();
     }
