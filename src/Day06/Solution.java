@@ -41,11 +41,11 @@ public class Solution {
             StringBuilder even = new StringBuilder();
             StringBuilder odd = new StringBuilder();
 
-            for (int j = 0; j < length; j+=2) {
+            for (int j = 0; j < length; j += 2) {
                 even.append(s.charAt(j));
             }
 
-            for (int k = 1; k < length; k+=2) {
+            for (int k = 1; k < length; k += 2) {
                 odd.append(s.charAt(k));
             }
 

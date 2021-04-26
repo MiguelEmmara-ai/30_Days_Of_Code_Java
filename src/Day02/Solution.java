@@ -1,14 +1,13 @@
 package Day02;
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+
+import java.util.Scanner;
 
 /**
  * Created by Miguel Emmara
  */
 public class Solution {
+
+    private static final Scanner scanner = new Scanner(System.in);
 
     // Complete the solve function below.
     static void solve(double meal_cost, int tip_percent, int tax_percent) {
@@ -17,8 +16,6 @@ public class Solution {
         double total_cost = meal_cost + tip + tax;
         System.out.println(Math.round(total_cost));
     }
-
-    private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
         double meal_cost = scanner.nextDouble();

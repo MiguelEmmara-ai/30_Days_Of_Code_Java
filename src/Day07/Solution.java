@@ -22,7 +22,7 @@ public class Solution {
             arr[i] = arrItem;
         }
 
-        reverse(arr, 0, n-1);
+        reverse(arr, 0, n - 1);
 
         for (int i = 0; i < n; i++) {
             System.out.print(arr[i] + " ");
@@ -42,6 +42,6 @@ public class Solution {
         temp = arr[start];
         arr[start] = arr[end];
         arr[end] = temp;
-        reverse(arr, start+1, end-1);
+        reverse(arr, start + 1, end - 1);
     }
 }

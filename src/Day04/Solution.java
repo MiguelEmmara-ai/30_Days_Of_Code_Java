@@ -1,7 +1,6 @@
 package Day04;
 
-import java.io.*;
-import java.util.*;
+import java.util.Scanner;
 
 /**
  * Created by Miguel Emmara
@@ -18,20 +17,6 @@ class Person {
         }
     }
 
-    public void amIOld() {
-        if (this.age < 13) {
-            System.out.println("You are young.");
-        } else if (this.age < 18) {
-            System.out.println("You are a teenager.");
-        } else {
-            System.out.println("You are old.");
-        }
-    }
-
-    public void yearPasses() {
-        this.age++;
-    }
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int T = sc.nextInt();
@@ -46,5 +31,19 @@ class Person {
             System.out.println();
         }
         sc.close();
+    }
+
+    public void amIOld() {
+        if (this.age < 13) {
+            System.out.println("You are young.");
+        } else if (this.age < 18) {
+            System.out.println("You are a teenager.");
+        } else {
+            System.out.println("You are old.");
+        }
+    }
+
+    public void yearPasses() {
+        this.age++;
     }
 }
