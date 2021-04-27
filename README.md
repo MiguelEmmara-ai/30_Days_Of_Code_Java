@@ -19,6 +19,8 @@
   - [Day 07](https://github.com/MiguelEmmara-ai/30_Days_Of_Code_Java/tree/master/src/Day07)
   - [Day 08](https://github.com/MiguelEmmara-ai/30_Days_Of_Code_Java/tree/master/src/Day08)
   - [Day 09](https://github.com/MiguelEmmara-ai/30_Days_Of_Code_Java/tree/master/src/Day09)
+  - [Day 10](https://github.com/MiguelEmmara-ai/30_Days_Of_Code_Java/tree/master/src/Day10)
+  - [Day 11](https://github.com/MiguelEmmara-ai/30_Days_Of_Code_Java/tree/master/src/Day11)
 
 # License
 
