@@ -1,20 +1,20 @@
-import java.util.Scanner;
+import java.util.LinkedList;
 
 /**
  * Created by Miguel Emmara
  */
 public class Test {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int n;
-        n = scan.nextInt();
+        LinkedList<Integer> a = new LinkedList<>();
 
-        String s = Integer.toString(n);
-
-        if (n == Integer.parseInt(s)) {
-            System.out.println("Good job");
-        } else {
-            System.out.println("Wrong answer.");
+        for (int i = 1; i <= 10; i++) {
+            a.add(i);
         }
+
+        for (Integer integer : a) {
+            System.out.println(integer);
+        }
+
+        System.out.println(a.get(5));
     }
 }
